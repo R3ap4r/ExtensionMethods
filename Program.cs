@@ -46,20 +46,5 @@ namespace ExtensionMethods
         }
       }
     }
-
-    //Here we're going to extend the Person Class with some methods
-
-    //Checks if the annual income is at least that of the supplied limit
-    public static bool HasMoreThan(this Person person, double limit)
-    {
-      return person.AnnualIncome >= limit;
-    }
-
-    //Checks if the name provided is shared by anyone else
-
-    public static bool IsCommon(this Person person, string toCheckFor)
-    {
-      return string.Equals(person.FirstName, toCheckFor, StringComparison.CurrentCultureIgnoreCase);
-    }
   }
 }
